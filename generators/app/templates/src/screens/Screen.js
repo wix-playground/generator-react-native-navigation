@@ -18,7 +18,7 @@ class WelcomeScreen extends Component {
       <View style={styles.bar}>
         <View style={{ width: 2, height: 2, borderRadius: 1, backgroundColor: 'red', alignSelf: 'center' }} />
         <View style={styles.root} key={'root'}>
-          <Text style={styles.h1}>{`React Native Navigation!`}</Text>
+          <Text style={styles.h1}>{`${this.props.screenName}`}</Text>
         </View>
         <View style={{ width: 2, height: 2, borderRadius: 1, backgroundColor: 'red', alignSelf: 'center' }} />
       </View>
