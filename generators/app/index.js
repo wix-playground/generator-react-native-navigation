@@ -52,11 +52,6 @@ module.exports = class extends Generator {
       this.destinationPath(`babel.config.js`)
     );
 
-    this.fs.copyTpl(
-      this.templatePath(`.gitignore`),
-      this.destinationPath(`.gitignore`)
-    );
-
     // Copy android files
     this.fs.copyTpl(
       this.templatePath(`android`),
