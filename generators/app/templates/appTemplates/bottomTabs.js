@@ -19,7 +19,8 @@ function start() {
                         text: 'Screen 1',
                         icon: require('./assets/one.png'),
                         selectedIcon: require('./assets/one.png'),
-                        selectedIconColor: '#0f0'
+                        selectedIconColor: '#0f0',
+                        selectedTextColor: '#0f0'
                       },
                       topBar: {
                         title: {
@@ -46,6 +47,7 @@ function start() {
                         icon: require('./assets/two.png'),
                         selectedIcon: require('./assets/two.png'),
                         selectedIconColor: '#0f0',
+                        selectedTextColor: '#0f0'
                       },
                       topBar: {
                         title: {

@@ -1,6 +1,7 @@
 const React = require('react');
-const { Component } = require('react');
-const { View, Text } = require('react-native');
+const {Component} = require('react');
+const {View, Text, Button} = require('react-native');
+const {Navigation} = require('react-native-navigation');
 
 class WelcomeScreen extends Component {
   static options() {
@@ -15,14 +16,22 @@ class WelcomeScreen extends Component {
 
   render() {
     return (
-      <View style={styles.bar}>
-        <View style={{ width: 2, height: 2, borderRadius: 1, backgroundColor: 'red', alignSelf: 'center' }} />
-        <View style={styles.root} key={'root'}>
-          <Text style={styles.h1}>{`${this.props.screenName}`}</Text>
-        </View>
-        <View style={{ width: 2, height: 2, borderRadius: 1, backgroundColor: 'red', alignSelf: 'center' }} />
+      <View style={styles.root} key={'root'}>
+        <Text style={styles.h1}>{`${this.props.screenName}`}</Text>
+        <Button title={`Push screen`} onPress={this.pushScreen} />
       </View>
     );
+  }
+
+  pushScreen = () => {
+    Navigation.push(this.props.componentId, {
+      component: {
+        name: 'RNNBootstrap.screen',
+        passProps: {
+          screenName: 'Pushed Screen'
+        }
+      }
+    })
   }
 }
 
@@ -33,11 +42,7 @@ const styles = {
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  bar: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between'
+    backgroundColor: '#e7e7e7'
   },
   h1: {
     fontSize: 24,
