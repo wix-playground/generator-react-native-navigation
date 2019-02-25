@@ -1,6 +1,6 @@
 {
   "name": "generator-react-native-navigation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Bootstrap react-native project with react-native-navigation templates",
   "main": "index.js",
   "scripts": {

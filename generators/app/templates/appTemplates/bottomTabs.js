@@ -16,7 +16,15 @@ function start() {
                     },
                     options: {
                       bottomTab: {
-                        text: 'Screen 1'
+                        text: 'Screen 1',
+                        icon: require('./assets/one.png'),
+                        selectedIcon: require('./assets/one.png'),
+                        selectedIconColor: '#0f0'
+                      },
+                      topBar: {
+                        title: {
+                          text: 'First Screen'
+                        }
                       }
                     }
                   }
@@ -34,7 +42,15 @@ function start() {
                     },
                     options: {
                       bottomTab: {
-                        text: 'Screen 2'
+                        text: 'Screen 2',
+                        icon: require('./assets/two.png'),
+                        selectedIcon: require('./assets/two.png'),
+                        selectedIconColor: '#0f0',
+                      },
+                      topBar: {
+                        title: {
+                          text: 'Second Screen'
+                        }
                       }
                     }
                   }
