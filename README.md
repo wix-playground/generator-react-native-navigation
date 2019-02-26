@@ -12,7 +12,7 @@ npm install -g yo
 Then install the generator:
 
 ```
-npm install -g yo generator-react-native-navigation
+npm install -g generator-react-native-navigation
 ```
 
 ## Usage
